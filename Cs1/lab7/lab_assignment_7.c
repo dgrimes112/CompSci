@@ -16,19 +16,19 @@ return 0;
 void bubbleSortCount(int* array, int n){
 
     int i,j,temp;
-    int countArray[9] = {0};
+	int* countArray;
+	countArray = calloc(n, sizeof(int));
 	for(i = 0; i < n-1; i++){
 		for(j = 0; j < n-1-i; j++){
 			if(array[j]>array[j+1]){
 				temp = array[j+1];
 				array[j + 1] = array[j];
 				array[j] = temp;
-                countArray[j]++;
-				countArray[j+1]++;
+                countArray[i]++;
 			}
 		}
 	} 
-    for(int i = 0; i < n; i++){
-        printf("index %d took %d swaps\n", i , countArray[i]);
+    for(int i = 0; i < n-1; ++i){
+        printf("pass %d took %d swaps\n", i , countArray[i]);
 }
 }
