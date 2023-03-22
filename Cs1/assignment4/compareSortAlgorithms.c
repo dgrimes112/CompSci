@@ -42,7 +42,7 @@ void merge(int pData[], int l, int m, int r){
 		j++;
 		k++;
 	}
-	extraMemoryAllocated += sizeof(L) + sizeof(R);
+	extraMemoryAllocated += (sizeof(L) + sizeof(R));
 	free(L);
 	free(R);
 }
