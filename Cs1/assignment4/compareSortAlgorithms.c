@@ -78,7 +78,7 @@ for(i = 1; i < n; i++){
 	}
 	pData[j + 1] = temp;
 }
-extraMemoryAllocated = sizeof(temp);
+extraMemoryAllocated = 0;
 }
 
 // implement bubble sort
@@ -94,7 +94,7 @@ void bubbleSort(int* pData, int n){
 			}
 		}
 	}
-	extraMemoryAllocated = sizeof(temp);
+	extraMemoryAllocated = 0;
 }
 
 // implement selection sort
@@ -113,7 +113,7 @@ for(i=0; i<n-1; i++){
 	pData[i] = pData[min];
 	pData[min] = temp;
 }
-extraMemoryAllocated = sizeof(temp);
+extraMemoryAllocated = 0;
 }
 
 // parses input file to an integer array
