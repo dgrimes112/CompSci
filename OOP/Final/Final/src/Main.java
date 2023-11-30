@@ -575,6 +575,7 @@ public class Main
                         System.out.printf("\n");
                         p.print();
                         System.out.printf("\n");
+                        break;
                     }
 
                 }
@@ -710,6 +711,7 @@ public class Main
                         System.out.printf("\n");
                         p.print();
                         System.out.printf("\n");
+                        break;
                     }
 
                 }    
@@ -843,6 +845,7 @@ public class Main
                         System.out.printf("\n");
                         p.print();
                         System.out.printf("\n");
+                        break;
                     }
 
                 }
@@ -1257,11 +1260,11 @@ class Student extends Person
         System.out.println("Fees: $52");
         if(gpa >= 3.85)
         {
-            System.out.printf("Total Payment (after discount): $%f\t($%f discount applied)\n", getTuition() * .75, getTuition() * .25);
+            System.out.printf("Total Payment (after discount): $%.2f\t($%.2f discount applied)\n", getTuition() * .75, getTuition() * .25);
         }
         else
         {
-            System.out.printf("Total Payment (after discount): $%f\t($%f discount applied)\n", getTuition(), 0);
+            System.out.printf("Total Payment (after discount): $%.2f\t($%d discount applied)\n", getTuition(), 0);
         }
         System.out.println("-------------------------------------");
     }
