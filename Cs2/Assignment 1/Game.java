@@ -214,10 +214,13 @@ class Game
     //play the game
     public int play()
     { 
+        char playerOneMove = ' ';
+        char playerTwoMove = ' ';    
         int winner = 0;
         while (winner == 0)
         {
-            performMove(selectPlayerOneMove());
+            playerOneMove = selectPlayerOneMove();
+            performMove(playerOneMove);
             //System.out.println("Player One Move: " + playerOneMove);   //uncomment if you wanna see the games played out
             //printBoard();
             if (Board[7][7] == 'K') //check if p1 wins
@@ -225,7 +228,8 @@ class Game
                 winner = 1;
                 break;
             }
-            performMove(selectPlayerTwoMove());
+            playerTwoMove = selectPlayerTwoMove();
+            performMove(playerTwoMove);
             //System.out.println("Player Two Move: " + playerTwoMove);
             //printBoard();
             if (Board[7][7] == 'K') //check if p2 wins
