@@ -1,0 +1,24 @@
+**************************************
+Test Case 1 with two stoves.
+Number of moves is 3
+**************************************
+Test Case 2 with three stoves.
+Number of moves is 2
+**************************************
+Test Case 3 with five stoves.
+Not possible to solve since distribution is uneven.
+**************************************
+Test Case 4 with ten stoves.
+Number of moves is 5
+**************************************
+Test Case 5 with fifteen stoves.
+Number of moves is 13
+**************************************
+Test Case 6 with twenty stoves.
+Number of moves is 12
+**************************************
+Test Case 7 with fifty stoves.
+Number of moves is 26
+**************************************
+Test Case 8 with one hundred stoves.
+Number of moves is 23
